@@ -43,3 +43,10 @@ The API endpoint `system/stop` allows any user with API access to stop the Elast
 **Step 2: Verify Elasticsearch Is Down**
 ![image](https://github.com/user-attachments/assets/c0a36824-4179-491a-ae98-f1186aeac9b6)
 > Nagios Log Server will remain inaccessible until the Elasticsearch service is started again.
+
+---
+
+## Disclaimer
+This work was conducted outside of my employment and reflects my personal efforts in cybersecurity research.
+
+---
