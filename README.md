@@ -1,7 +1,8 @@
-# Remote Elasticsearch Shutdown via API in Nagios Log Server 2024R1.3.1
+# Authenticated Elasticsearch DoS via API in Nagios Log Server 2024R1.3.1
 
 [▶️ PoC Demo](https://www.youtube.com/watch?v=YPK0-b9GeV8&ab_channel=SethKraft)
 
+#### CVE ID: [CVE-2025-44824](https://nvd.nist.gov/vuln/detail/CVE-2025-44824)
 #### Date: 2025-04-02
 #### Exploit Author: Seth Kraft
 #### Vendor Homepage: https://www.nagios.com/
@@ -10,8 +11,11 @@
 #### Version: 2024R1.3.1 and below
 #### Tested On: Nagios Log Server 2024R1.3.1 (default configuration, Ubuntu 20.04)
 #### CWE: CWE-284, CWE-285
-#### CVSS: 8.3 (CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/S:C/VC:N/VI:L/VA:H)
+#### CVSS: 8.5 `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:H`
 #### Type: Denial of Service (DoS)
+
+## Authorization
+**For research and authorized testing only.** Please do not use against systems without permission.
 
 ## Summary
 A vulnerability exists in the latest version (2024R1.3.1) of Nagios Log Server that allows a low-privileged user with read-only API access to remotely stop the Elasticsearch service via API call.
