@@ -10,9 +10,8 @@
 #### Software Link: https://assets.nagios.com/downloads/nagios-log-server/versions.php
 #### Version: 2024R1.3.1 and below
 #### Tested On: Nagios Log Server 2024R1.3.1 (default configuration, Ubuntu 20.04)
-#### CWE: CWE-284, CWE-285
+#### CWE: CWE-863 (Incorrect Authorization)
 #### CVSS: 8.5 `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:H`
-#### Type: Denial of Service (DoS)
 
 ## Authorization
 **For research and authorized testing only.** Please do not use against systems without permission.
@@ -42,7 +41,7 @@ The API endpoint `system/stop` allows any user with API access to stop the Elast
 }
 ```
 
-> Despite the misleading error message — Elasticsearch actually stops, causing Nagios Log Server to lose logging functionality.
+> Despite the misleading error message — Elasticsearch actually stops, causing Nagios Log Server to lose functionality.
 
 **Step 2: Verify Elasticsearch Is Down**
 ![image](https://github.com/user-attachments/assets/c0a36824-4179-491a-ae98-f1186aeac9b6)
